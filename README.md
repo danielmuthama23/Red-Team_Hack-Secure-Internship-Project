@@ -105,10 +105,11 @@ Encrypts/decrypts files using Fernet (AES).
             f.write(decrypted_data)
 
 # Usage:
-key = generate_key()
-save_key(key)
-encrypt_file(key, "plain.txt", "encrypted.txt")
-decrypt_file(key, "encrypted.txt", "decrypted.txt")
+
+    key = generate_key()
+    save_key(key)
+    encrypt_file(key, "plain.txt", "encrypted.txt")
+    decrypt_file(key, "encrypted.txt", "decrypted.txt")
 
 **Command-Line Tools:**
 1. Nmap Port Scanning
