@@ -13,8 +13,8 @@ This repository contains scripts, commands, and methodologies used during the Ha
 ## Tools and Scripts  
 
 ### 1. Python Port Scanner  
-Scans open ports on a target IP address.  
-```
+
+#### Scans open ports on a target IP address.  
     import socket
     from concurrent.futures import ThreadPoolExecutor
 
@@ -39,14 +39,15 @@ Scans open ports on a target IP address.
         return open_ports
 
     # Example usage:
+
     ip = "testphp.vulnweb.com"
     start_port = 1
     end_port = 100
     open_ports = port_scanner(ip, start_port, end_port)
     print(f"Open ports: {open_ports}")
 
-
 ### 2. Password Strength Checker
+
 Evaluates password strength using regex and zxcvbn.
 
     import re
